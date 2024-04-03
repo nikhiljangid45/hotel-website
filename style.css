@@ -1,0 +1,614 @@
+*{
+    margin: 0;padding: 0; 
+    box-sizing: border-box;
+}
+
+.top{
+    padding-top: 30px;
+    width: 100%;
+    height: 90vh;
+   
+    background-image: url("images/mainimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+}.book{
+    background-color: orangered;
+    padding: 10px 18px;
+    color: white;
+     font-size: 17px;
+     border-radius: 4px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.8s;
+}
+.menu-btn:hover{
+    border-bottom: 1px solid orange;
+}
+
+.text{
+    
+    color: white;
+    margin-top: 15%;
+    text-align: center;
+    transition: 0.8s;
+}
+.text p{
+    font-size: 1.5rem;
+}
+.text h1{
+    font-size:4.6rem ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text h1 span{
+    color: orangered;
+}
+/*  style the service section  */
+.service{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    top: -75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0.9px  0.9px 30px rgb(207, 195, 195);
+    border-radius: 10px; 
+    padding: 60px 0px;
+    gap: 2rem;
+}
+.i1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i1 img{
+ height: 2.6rem;
+ width: 2.6rem;
+}
+
+.check-in{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.i2 label{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.i2 input{
+   height: 2.4rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  font-family: 600;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px 15px;
+}
+
+/* about section style  */
+
+.about{
+    width: 100%;
+   padding: 70px 0px; 
+}
+.about-content{
+    max-width: 990px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    
+}
+.about-left img{
+    width: 430px;
+    height: 279px;
+    margin: 60px;
+    border-radius: 8px;
+
+}
+.about-right{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-right h3{
+
+}
+.about-right h1{
+    font-size: 2.9rem;
+
+}
+.about-right p{
+    font-size: 1.1rem;
+    color: rgb(83, 81, 81);
+
+}
+.abook{
+    width: 130px;
+}
+
+/* deal of the dat seciton style star  */
+.main-deal{
+    padding: 50px 100px ;
+}
+.main-deal img {
+  height: 1.3rem;
+  width: 1.3rem ;
+}
+.deal1{
+    max-width: 570px;
+    margin: 50px 0px;
+}
+.deal1 p{
+ font-size: 20px;
+ font-weight: 700;
+}
+
+.deal1 h1{
+    font-weight: 900;
+    font-size: 48px
+}
+.deal2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.card1{
+    height: 400px;
+    width: 330px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0.9px 0.9px 30px rgb(207, 195, 195);
+}
+.card1 .image-contant{
+ width: 100%;
+ height: 190px;
+ background-image: url("images/card1.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ padding: 1rem;
+ box-sizing: border-box;
+}
+
+.img-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1rem;
+    
+}
+.img-list div{
+ height: 2.4rem;
+ width: 2.4rem;
+ background-color: white;
+ border-radius: 50px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.text-content{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+
+.text-content span{
+    font-weight: bold;
+    font-size: 1.08rem;
+
+}
+.card2 .image-contant{
+    background-image: url("images/card2.jpg");
+}
+.card3 .image-contant{
+    background-image: url("images/card3.jpg");
+}
+
+
+
+/* popular section styleing is start  */
+.popular img {
+    height: 2.4rem;
+    width: 2.5rem;
+}
+.popular{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 200px;
+    background-image: url("images/locationbg.jpg");
+    background-size: cover;
+}
+
+.popular1{
+    width: 380px;
+    height: 600px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left:40px ;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.pup1-text p{
+    font-size: 1.03rem;
+    font-weight: 900;
+    color: rgb(90, 89, 89);
+
+}
+
+.pup1-text h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: black;
+}
+.pup1-city{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.pup1-city .city{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.city div{
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city p{
+    font-size:1.4rem;
+    color: black;
+    font-weight: 900;
+}
+
+.popular2{
+  
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular2 img{
+    height: 80%;
+    width: 80%;
+}
+
+.customer{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 242, 242);
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    box-shadow: 0.9px 0.9px 30px rgb(207, 195, 195);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+
+.cus1{
+    text-align: center;
+}
+.cus1 h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.cus1 p{
+    font-size: 1.24rem;
+    font-weight: 900;
+    color: rgb(66, 66, 66);
+}
+
+/*  style the explore section  */
+.explore{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 70px 0px;
+    border-bottom: 1px solo black;
+}
+.exp1{
+    text-align: center;
+}
+.exp1 h1{
+    font-size: 2.7rem;
+    font-weight: 900;
+
+}
+
+.exp1 p{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.exp2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+.exp21{
+    height: 230px;
+    width: 340px;
+    background-color: red;
+    border-radius: 10px;
+    color: red;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: end;
+    padding: 18px;
+        box-shadow: 0.9px 0.9px 30px rgb(207, 195, 195);
+
+}
+.exp21:nth-child(1){
+    background-image: url("images/maldives.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.exp21:nth-child(2) {
+    background-image: url("images/india.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.exp21:nth-child(3) {
+    background-image: url("images/mainimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* footer section style is start here */
+footer{
+    width: 100%;
+    padding-left:170px;
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
+     gap: 2rem;
+    padding-bottom: 120px ;  
+  
+}
+ 
+footer h2{
+    font-size: 1.5rem;
+     color: white;
+     margin-bottom: 2.7rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.part1 h2{
+    font-size: 2.6rem;
+    color: white;
+    box-sizing: border-box;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(141, 137, 137);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+footer a:hover{
+    color: white;
+    cursor: pointer;
+
+}
+ .part1 p{
+    color: rgb(185, 182, 182);
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 3rem;
+ }
+
+ .social{
+    display: flex;
+    gap: 1rem;
+ }
+ footer img {
+     height: 30px;
+     width: 30px;
+ }
+
+ .social div {
+     height: 45px;
+     width: 45px;
+     background-color: rgb(187, 183, 183);
+     border-radius: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.twiter:hover{
+    cursor: pointer;
+    background-color: white;
+
+
+}
+
+
+
+@media screen and (max-width:1150px) {
+    .deal2 {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem;
+    }
+
+        .exp2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+        }
+
+     .footer{
+        grid-template-columns: repeat(2 ,3fr);
+     }   
+    
+
+}
+
+@media screen and (max-width:910px) {
+    .deal2 {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 5rem;
+    }
+        .deal1 {
+            text-align: center;
+        }
+
+                .exp2 {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 4rem;
+                }
+
+.footer {
+    grid-template-columns: repeat(1, 3fr);
+
+}
+
+.about-content {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+}
+ .about-right {
+     text-align: center;
+     align-items: center;
+ }
+.nav{
+    display: none;
+}
+.popular{
+    padding-right: 50px;
+}
+ .deal2 {
+     align-items: center;
+     justify-content: center;
+    margin: 30%;
+    }
+
+        .text p {
+            font-size: 1.5rem;
+        }
+    
+        .text h1 {
+            font-size: 3.7rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+}
+
+
+
+@media screen and (max-width:466px) {
+    
+    .main-deal {
+            padding: 50px 30px;
+    }
+        .about-left img {
+            width: 230px;
+            height: 279px;
+            margin: 60px;
+            border-radius: 8px;
+    
+        }
+                .popular {
+                    padding-right:  0px;
+                }
+
+
+                                .text p {
+                                    font-size: 1.2rem;
+                                }
+                
+                                .text h1 {
+                                    font-size: 2.6rem;
+                                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                }
+                               
+}
+
+
+@media screen and (max-width:400px) {
+
+.exp21 {
+        height: 230px;
+        width: 200px;
+
+    }
+footer {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.card1 {
+    height: 400px;
+    width: 200px;
+    
+}
+}
+
+
+
